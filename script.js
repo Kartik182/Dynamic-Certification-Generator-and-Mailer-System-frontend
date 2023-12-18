@@ -13,6 +13,10 @@ function submitForm(e) {
         body: formData,
         
     })
-        .then((res) => console.log(res))
+        .then((res) => {
+            location.reload();
+            console.log(res);
+        })
         .catch((err) => ("Error occured", err));
+        
 }
